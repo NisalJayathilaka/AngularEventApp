@@ -22,7 +22,9 @@
     "jquery": "^3.6.0",
     "ngf-bootstrap": "0.0.5",
     "ngx-bootstrap": "^8.0.0",
+    "ngx-toastr": "^14.2.2",
     "rxjs": "~6.6.0",
+    "toastr": "^2.1.4",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
