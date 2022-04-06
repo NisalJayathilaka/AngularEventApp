@@ -6,6 +6,9 @@ import { EventThumbnailComponent } from './events/event-thumbnail-component';
 import { NavBarComponent } from './nav/navbar.component';
 import { EventService } from './events/shared/event.service';
 import { ToastService } from './common/toastr.service';
+import { EventDetailsComponent } from './events/event-details/event-detials.component';
+import { RouterModule } from '@angular/router';
+import { appRoutes } from './routes';
 
 
 
@@ -14,10 +17,12 @@ import { ToastService } from './common/toastr.service';
     EventAppComponent,
     EventListComponent,
     EventThumbnailComponent,
-    NavBarComponent
+    NavBarComponent,
+    EventDetailsComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [
     EventService,
