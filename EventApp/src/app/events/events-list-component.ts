@@ -2,6 +2,7 @@ import { toBase64String } from "@angular/compiler/src/output/source_map";
 import { Component } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
 import { ToastService } from "../common/toastr.service";
+import { IEvent } from "./shared/event.model";
 import { EventService } from "./shared/event.service";
 
 
@@ -22,7 +23,7 @@ import { EventService } from "./shared/event.service";
 })
 export class EventListComponent{
 
-    events:any
+    events:IEvent[]
 
     constructor(private eventSerive: EventService, private toastr:ToastService, private route:ActivatedRoute)
     {
